@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
+    + main()
+}
+
+class WebsiteBuilder {
+    {static} +void createWebsite(String siteName, String author, boolean CSS, boolean JS)
+    {static} -void addWebsiteContents(String siteName, String author)
+}
+
+App *- WebsiteBuilder
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+App : {static} +main()
+
+class ScanPeople {
+    {static} -void createFile()
+    {static} +String getSortedFileContents()
+    {static} +void writeToFile(String)
+}
+
+App *-- ScanPeople
+
+@enduml

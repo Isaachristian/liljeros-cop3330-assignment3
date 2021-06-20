@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
+    +main()
+}
+
+class ReadData {
+    +String getFormattedData()
+}
+
+App *-- ReadData
+
+@enduml

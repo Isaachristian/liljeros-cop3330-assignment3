@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
+    {static} main()
+}
+
+class InputFilter {
+    {static} +String filterFileContents()
+    {static} +void writeResultsToFile(String fileName, String contents)
+}
+
+App *- InputFilter
+
+@enduml
